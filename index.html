@@ -1,1 +1,71 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+
+  <title>Australia Tourism Recovery</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1>Australia’s International Tourism Recovery</h1>
+
+    <p class="intro">
+
+      This visualisation explores international tourism
+      trends in Australia using visitor numbers and
+      tourism spending data.
+
+    </p>
+
+    <div class="vis-section">
+
+      <h2>Who Visits Australia the Most?</h2>
+
+      <div id="vis1"></div>
+
+    </div>
+
+    <div class="vis-section">
+
+      <h2>Do More Visitors Mean More Spending?</h2>
+
+      <div id="vis2"></div>
+    
+
+    </div> 
+
+  </div class="vis-section">
+      <h2>Do Tourists who stay longer spend more</h2>
+
+      <div id="vis3"></div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    vegaEmbed('#vis1', 'vis1.json');
+
+    vegaEmbed('#vis2', 'vis2.json');
+
+    vegaEmbed('#vis3', 'vis3.json');
+
+  </script>
+
+</body>
+
+</html>
