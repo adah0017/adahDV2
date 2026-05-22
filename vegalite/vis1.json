@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "title": "Who visits Australia the most",
+    "data": {"url": "tourism.csv"},
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "Country",
+            "type": "nominal",
+            "axis": {
+                "title": "Country"
+             }
+        },
+
+        "y": {
+            "field": "Visitors_thousands",
+            "type": "quantitative",
+            "title": "Visitors (in thousands)"
+        }
+    }
+}
